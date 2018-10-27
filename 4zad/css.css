@@ -1,0 +1,16 @@
+
+.divi{
+    position: relative;
+    height: 190px;
+    width:250px;
+    margin: auto;
+    text-align:center;
+    background-color: blue;
+    border-radius: 10px;
+}
+#gumb{
+    position: absolute;
+    left: 20px;
+}
+
+

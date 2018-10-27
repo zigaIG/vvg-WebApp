@@ -1,0 +1,48 @@
+<!-- 
+Napisati Post formu koja će slati podatke na data.php stranicu na serveru. U formi mora biti tablica koja će se slati
+na server. tablica mora sadržavati header username, puno ime i lozinka. Tijelo tablice mora imati 3 reda u kojima će stajati 
+textfieldovi u koje se unose zadani podaci. Poslje tablice staviti dva radio buttona vrijednosti => spremiti: DA|NE.
+Mora postojati i button za Submit Forme.
+Napomene:
+Radio buttoni moraju imati isti name property. textfieldovima dajte neki name property također.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebApp</title>
+    </head>
+    <body>
+    <form name="input" action="data.php" method="POST">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td align="center">Username</td>
+                    <td align="center">Puno ime</td>
+                    <td align="center">Password</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type=”textfield” name=”username”/></td>
+                    <td><input type="textfield" name="puno_ime"/></td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td><input type=”textfield” name=”username”/></td>
+                    <td><input type="textfield" name="puno_ime"/></td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td><input type=”textfield” name=”username”/></td>
+                    <td><input type="textfield" name="puno_ime"/></td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+            </tbody>
+        </table>
+        Spremiti:<input type="radio" name="spremiti" value="da"/>DA<input type="radio" name="spremiti" value="ne"/>NE<br>
+        <input type="submit" value="Submit" align="center"/>
+    </form>
+        
+    </body>
+
+<html>
